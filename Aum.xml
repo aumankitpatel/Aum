@@ -1,10 +1,10 @@
 <xml xmlns="http://www.w3.org/1999/xhtml">
-  <block type="movement_forward" id="1" x="96" y="-4">
+  <block type="movement_forward" id="1" x="102" y="3">
     <next>
-      <block type="robot_delay" id="3" inline="true">
+      <block type="robot_delay" id="99" inline="true">
         <value name="DELAY">
-          <block type="math_number" id="10">
-            <field name="NUM">3000</field>
+          <block type="math_number" id="106">
+            <field name="NUM">200</field>
           </block>
         </value>
         <next>
@@ -13,22 +13,31 @@
               <block type="robot_delay" id="32" inline="true">
                 <value name="DELAY">
                   <block type="math_number" id="39">
-                    <field name="NUM">15</field>
+                    <field name="NUM">100</field>
                   </block>
                 </value>
                 <next>
                   <block type="movement_right" id="49">
                     <next>
-                      <block type="movement_forward" id="88">
+                      <block type="robot_delay" id="108" inline="true">
+                        <value name="DELAY">
+                          <block type="math_number" id="115">
+                            <field name="NUM">300</field>
+                          </block>
+                        </value>
                         <next>
-                          <block type="robot_delay" id="61" inline="true">
-                            <value name="DELAY">
-                              <block type="math_number" id="68">
-                                <field name="NUM">3000</field>
-                              </block>
-                            </value>
+                          <block type="movement_forward" id="88">
                             <next>
-                              <block type="movement_stop" id="78"></block>
+                              <block type="robot_delay" id="61" inline="true">
+                                <value name="DELAY">
+                                  <block type="math_number" id="68">
+                                    <field name="NUM">3000</field>
+                                  </block>
+                                </value>
+                                <next>
+                                  <block type="movement_stop" id="78"></block>
+                                </next>
+                              </block>
                             </next>
                           </block>
                         </next>
